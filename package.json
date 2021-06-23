@@ -17,6 +17,7 @@
   },
   "description": "",
   "dependencies": {
+    "react-redux": "^7.2.4",
     "redux": "^4.1.0"
   }
 }
