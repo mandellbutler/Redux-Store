@@ -1,4 +1,6 @@
 import { useReducer } from 'react';
+
+//actions that are needed
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -11,11 +13,9 @@ import {
   TOGGLE_CART,
 } from './actions';
 
-// TODO: To get a better understand of how a reducer works - add comments to the various actions in the reducer
+// Reducer
 export const reducer = (state, action) => {
   switch (action.type) {
-    // TODO: Add a comment describing the functionality of the UPDATE_PRODUCTS case
-    // Your comment here
     case UPDATE_PRODUCTS:
       return {
         ...state,

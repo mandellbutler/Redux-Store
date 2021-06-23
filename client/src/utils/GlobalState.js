@@ -1,10 +1,16 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useReducer } from "react";
 import { useProductReducer } from './reducers'
 
+//create context
 const StoreContext = createContext();
+//bring in the context provider
 const { Provider } = StoreContext;
 
-const StoreProvider = ({ value = [], ...props }) => {
+// const reducer = ???
+
+//custom provider and make available for use
+export const StoreProvider = ({ value = [], ...props }) => {
+  //setup state
   const [state, dispatch] = useProductReducer({
     products: [],
     cart: [],
@@ -16,8 +22,11 @@ const StoreProvider = ({ value = [], ...props }) => {
   return <Provider value={[state, dispatch]} {...props} />;
 };
 
-const useStoreContext = () => {
+
+//custom hook to make context available for use
+export const useStoreContext = () => {
   return useContext(StoreContext);
 };
 
-export { StoreProvider, useStoreContext };
+
+
