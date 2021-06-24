@@ -15,6 +15,11 @@ import {
 
 //initial State
 const initialState = {
+  products: [],
+  cartOpen: false,
+  cart: [],
+  categories: [],
+  currentCategory: ''
 
 }
 
