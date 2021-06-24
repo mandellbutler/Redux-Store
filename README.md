@@ -5,7 +5,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technology](#technology)
-- [Resources] (#resources)
+- [Resources](#resources)
 
 
 # Description
