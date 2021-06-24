@@ -1,63 +1,57 @@
-# Progressive Budget
+# Redux Store
 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technology](#technology)
+- [Resources] (#resources)
 
 
 # Description
-Progressive Budget is a web application that allows users to perform the much needed task of monitoring their bank account, without interruption. This progressive web application actively caches user data and ensures full app functionality, even in instances when internet connection is unavailable. Users can have peace of mind, knowing their budget is always available and up to date, with the Progessive Budget app.  
-
+The Context API is quickly gaining traction as a worthy alternative or perhaps even successor to other libraries that manage global state in tandem with React, such as Flux or MobX. Nonetheless, the open source JavaScript library Redux remains the industry standard for managing complex state in a large-scale React application. 'Redux Store' is a project that uses Redux to refactor an online retailer's website, converting it from Context API to a global state manangement structure.
 
 # Installation
-## For local installation:
-
-  * clone the Github repository and add it to your local repo via your choice code-editing software (ie Visual Studio Code).
-
-  * Open Integrated Terminal in VS Code and run the following commands:
-
-    * 'npm install'
-
-    * 'npm run seed'
-
-    * 'npm start' 
-
-  * Once the "App running on port 7540" confirmation has been recieved, visit "localhost: 7540" in the internet browser. 
+NO installation required. Please see the deployed link below.
 
 
 
 ## For the deployed version of the application:
 
-  * [click the link] https://myprogressivebudget.herokuapp.com/
+  * [click the link] https://reduxstore21.herokuapp.com/
 
 
 
 # Usage
-This application allows fiscally consciouss users to closely monitor their transactions without interruption. Once the application has been installed and opened, the user is presented with a form to input a Transaction Name and Amount. Once the information has been entered, click on the 'Add Funds' or 'Subtract Funds' buttons, and the budget will adjust accordingly.
+For this project, the open source Javascript library, Redux, has been used to refactor an online retailer's website. By implementing these changes to the existing codebase, the Redux upgrade provides enhanced management of the complex state, on the back-end, while preserving the functional integrity on the front-end:
 
-<img src="public/images/home.png" width="400">
+* A user registers on the Signup page and then navigates to the Products page, which displays images and descriptions of products:
 
-Thanks to the application's intuitive design, with a few simple clicks, the user will have the ability to:
-
-* Enter deposits offline
-
-* Enter expenses offline
-
-* View an account balance, whether on or offline
+![Sign Up](client/public/gifs/demo-01.gif)
 
 
+* The user selects a category, chooses a product, views details about it on the product page, and adds it to and removes it from their shopping cart:
 
-![Add Transaction](public/images/Entry.gif)
+![Add to Cart](client/public/gifs/demo-02.gif)
 
+
+* The user checks out by going to their shopping cart.
+![Checkout](client/public/gifs/demo-03.gif)
+
+
+
+# Resources
+The refactoring of the existing code base relied heavily on the Redux documentation:
+- [Redux Documentation Link] https://redux.js.org/
 
 
 # Technology
-This application was made possible with the use of the follow dev tools:
+This project was made possible with the use of the follow dev tools:
 * Node.js
 * Express.js
 * MongoDb
 * Mongoose
 * Mongo Atlas
 * Heroku
+* React
+* Redux
