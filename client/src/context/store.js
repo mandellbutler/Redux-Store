@@ -2,7 +2,7 @@
 import { createStore } from 'redux';
 
 //create reducer
-// const reducer = ???
+import reducer from './reducer'
 
 //make reducer available for use
 export default createStore(reducer);
